@@ -1,11 +1,46 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Diagnostico from "../components/Diagnostico.astro";
+import ComoFunciona from "../components/ComoFunciona.astro";
+import Beneficios from "../components/Beneficios.astro";
+import Convenio from "../components/Convenio.astro";
+import RoiSimulador from "../components/RoiSimulador.astro";
+import CasosDeUso from "../components/CasosDeUso.astro";
+import Seguridad from "../components/Seguridad.astro";
+import CtaFinal from "../components/CtaFinal.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <Header />
+  <main id="top">
+    <Hero />
+    <Diagnostico />
+    <ComoFunciona />
+    <Beneficios />
+    <Convenio />
+    <RoiSimulador />
+    <CasosDeUso />
+    <Seguridad />
+    <CtaFinal />
+  </main>
+  <Footer />
 </Layout>
+
+<script>
+  const revealEls = document.querySelectorAll(".reveal");
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  revealEls.forEach((el) => io.observe(el));
+</script>

@@ -1,0 +1,52 @@
+---
+import isotipo from "../assets/Financial isotipo.svg";
+import feswLogo from "../assets/Logo Light Mode FESW.svg";
+---
+
+<footer class="border-t border-white/10 bg-black py-16">
+  <div class="mx-auto flex max-w-7xl flex-col items-center gap-3 px-6 text-center lg:px-8">
+    <span class="text-[11px] font-semibold uppercase tracking-wide text-white/40">Un proyecto presentado en</span>
+    <div class="rounded-xl bg-white px-4 py-2.5">
+      <img src={feswLogo.src} alt="Feria de Software" class="h-9 w-auto" />
+    </div>
+  </div>
+
+  <div class="mx-auto mt-14 grid max-w-7xl grid-cols-1 gap-10 border-t border-white/10 px-6 pt-14 sm:grid-cols-3 lg:px-8">
+    <div>
+      <div class="flex items-center gap-2.5">
+        <img src={isotipo.src} alt="" class="h-8 w-8" />
+        <span class="font-extrabold text-white">Financial</span>
+      </div>
+      <p class="mt-3 max-w-xs text-sm leading-relaxed text-white/50">
+        Plataforma de formalización municipal con agentes de IA sobre WhatsApp.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-sm font-bold text-white">Explora</h3>
+      <nav class="mt-4 flex flex-col gap-2.5 text-sm text-white/50">
+        <a href="#como-funciona" class="transition-colors hover:text-emerald">¿Cómo funciona?</a>
+        <a href="#municipalidad" class="transition-colors hover:text-emerald">Para la Municipalidad</a>
+        <a href="#impacto-roi" class="transition-colors hover:text-emerald">Impacto & ROI</a>
+        <a href="#casos-de-uso" class="transition-colors hover:text-emerald">Casos de Uso</a>
+        <a href="#seguridad" class="transition-colors hover:text-emerald">Seguridad</a>
+      </nav>
+    </div>
+
+    <div>
+      <h3 class="text-sm font-bold text-white">Contáctanos</h3>
+      <div class="mt-4 flex flex-col gap-2.5 text-sm text-white/50">
+        <a href="mailto:grupofinancial06@gmail.com" class="transition-colors hover:text-emerald"
+          >grupofinancial06@gmail.com</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="mx-auto mt-14 flex max-w-7xl flex-col items-center justify-between gap-4 border-t border-white/10 px-6 pt-8 text-xs text-white/40 sm:flex-row lg:px-8"
+  >
+    <p>© 2026 Financial · Plataforma de Formalización Municipal.</p>
+    <p>Hecho para transformar la economía informal de su comuna.</p>
+  </div>
+</footer>

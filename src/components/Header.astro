@@ -1,0 +1,82 @@
+---
+import isotipo from "../assets/Financial isotipo.svg";
+
+const navLinks = [
+  { href: "#como-funciona", label: "¿Cómo funciona?" },
+  { href: "#municipalidad", label: "Para la Municipalidad" },
+  { href: "#impacto-roi", label: "Impacto & ROI" },
+  { href: "#casos-de-uso", label: "Casos de Uso" },
+  { href: "#seguridad", label: "Seguridad" },
+];
+---
+
+<header class="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-md">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+    <a href="#top" class="flex items-center gap-2.5">
+      <img src={isotipo.src} alt="" class="h-9 w-9" />
+      <span class="leading-tight">
+        <span class="block font-extrabold text-white">Financial</span>
+        <span class="block text-[10px] font-semibold uppercase tracking-wider text-white/40"
+          >Formalización Municipal</span
+        >
+      </span>
+    </a>
+
+    <nav class="hidden items-center gap-8 text-sm font-semibold text-white/70 lg:flex">
+      {
+        navLinks.map((link) => (
+          <a href={link.href} class="transition-colors hover:text-emerald">
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <a
+      href="#cta-final"
+      class="hidden rounded-full bg-emerald px-5 py-2.5 text-sm font-bold text-petrol shadow-[0_0_20px_rgba(80,200,135,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_28px_rgba(80,200,135,0.45)] lg:block"
+    >
+      Agendar Presentación DAF / SECPLA
+    </a>
+
+    <button
+      id="menuBtn"
+      aria-label="Abrir menú"
+      class="grid h-10 w-10 place-items-center rounded-lg border border-white/15 lg:hidden"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+        ><path
+          d="M4 6h16M4 12h16M4 18h16"
+          stroke="#fff"
+          stroke-width="2"
+          stroke-linecap="round"></path></svg
+      >
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu border-t border-white/10 lg:hidden">
+    <nav class="flex flex-col gap-1 px-6 py-4 text-sm font-semibold text-white/70">
+      {
+        navLinks.map((link) => (
+          <a href={link.href} class="rounded-lg px-3 py-2.5 hover:bg-white/5 hover:text-white">
+            {link.label}
+          </a>
+        ))
+      }
+      <a href="#cta-final" class="mt-2 rounded-full bg-emerald px-4 py-3 text-center font-bold text-petrol"
+        >Agendar Presentación DAF / SECPLA</a
+      >
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  menuBtn?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("open");
+  });
+  mobileMenu?.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => mobileMenu?.classList.remove("open"))
+  );
+</script>
