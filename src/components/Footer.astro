@@ -6,9 +6,14 @@ import feswLogo from "../assets/Logo Light Mode FESW.svg";
 <footer class="border-t border-white/10 bg-black py-16">
   <div class="mx-auto flex max-w-7xl flex-col items-center gap-3 px-6 text-center lg:px-8">
     <span class="text-[11px] font-semibold uppercase tracking-wide text-white/40">Un proyecto presentado en</span>
-    <div class="rounded-xl bg-white px-4 py-2.5">
+    <a
+      href="https://informatica.usm.cl/eventos/33-feria-de-software/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="rounded-xl bg-white px-4 py-2.5 transition-opacity hover:opacity-90"
+    >
       <img src={feswLogo.src} alt="Feria de Software" class="h-9 w-auto" />
-    </div>
+    </a>
   </div>
 
   <div class="mx-auto mt-14 grid max-w-7xl grid-cols-1 gap-10 border-t border-white/10 px-6 pt-14 sm:grid-cols-3 lg:px-8">
@@ -39,6 +44,41 @@ import feswLogo from "../assets/Logo Light Mode FESW.svg";
         <a href="mailto:grupofinancial06@gmail.com" class="transition-colors hover:text-emerald"
           >grupofinancial06@gmail.com</a
         >
+        <a href="https://wa.me/56954419466" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-emerald"
+          >+56 9 5441 9466</a
+        >
+      </div>
+
+      <div class="mt-5 flex items-center gap-3">
+        <a
+          href="https://www.instagram.com/financial.cl?igsi=MTBidzY3NGNqMnJuMw=="
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          class="grid h-9 w-9 place-items-center rounded-full border border-white/10 text-white/50 transition-colors hover:border-emerald/40 hover:text-emerald"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8" />
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+          </svg>
+        </a>
+        <span
+          aria-label="LinkedIn (próximamente)"
+          title="Próximamente"
+          class="grid h-9 w-9 cursor-not-allowed place-items-center rounded-full border border-white/10 text-white/20"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8" />
+            <path
+              d="M7 10.5V17M7 7v.01M11 17v-4.5a2 2 0 0 1 4 0V17M11 17v-6.5"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
       </div>
     </div>
   </div>
