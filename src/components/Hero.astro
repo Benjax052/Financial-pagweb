@@ -1,14 +1,11 @@
-<section class="relative overflow-hidden bg-black">
-  <div
-    class="pointer-events-none absolute inset-0"
-    style="background:
-      radial-gradient(55% 50% at 85% 10%, rgb(80 200 135 / 0.16) 0%, rgb(80 200 135 / 0) 100%),
-      radial-gradient(45% 45% at 10% 90%, rgb(2 70 85 / 0.35) 0%, rgb(2 70 85 / 0) 100%),
-      radial-gradient(35% 35% at 40% 0%, rgb(19 147 129 / 0.18) 0%, rgb(19 147 129 / 0) 100%);"
-  >
-  </div>
+---
+import SectionGlow from "./SectionGlow.astro";
+---
 
-  <div class="relative mx-auto max-w-4xl px-6 py-24 text-center lg:px-8 lg:py-32">
+<section class="relative overflow-hidden bg-black">
+  <SectionGlow />
+
+  <div class="relative mx-auto max-w-6xl px-1 py-24 text-center lg:px-1 lg:py-13">
     <span
       class="reveal inline-flex items-center gap-2 rounded-full border border-emerald/30 bg-emerald/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-emerald"
     >
@@ -16,23 +13,24 @@
     </span>
 
     <h1
-      class="reveal mt-8 text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl"
+      class="reveal mt-8 text-4xl font-extrabold leading-[1.15] tracking-normal text-white sm:text-6xl lg:text-7xl"
     >
-      Convierta vecinos informales en contribuyentes <em class="text-emerald italic">activos</em>, sin fricción.
+      Convierta vecinos informales en contribuyentes <em class="text-emerald italic">activos</em>,<br />
+      sin fricción
     </h1>
 
     <p class="reveal mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-white/60">
-      Financial es el asistente de WhatsApp que guía a cada emprendedor de su comuna paso a paso
-      —desde la primera pregunta hasta el pago de la patente— mientras su equipo de Rentas y
+      Financial es el asistente de WhatsApp que guía a cada emprendedor de su comuna paso a paso,
+      desde la primera pregunta hasta el pago de la patente, mientras su equipo de Rentas y
       Fomento Productivo recupera cientos de horas hoy perdidas en ventanilla.
     </p>
 
     <div class="reveal mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
       <a
         href="#cta-final"
-        class="rounded-full bg-emerald px-7 py-4 text-center text-sm font-bold text-petrol shadow-[0_0_36px_rgba(80,200,135,0.3)] transition-all duration-300 hover:-translate-y-1"
+        class="rounded-full bg-emerald px-7 py-4 text-center text-sm font-bold text-petrol shadow-[0_0_36px_rgba(80,200,135,0.3)] transition-all duration-300 hover:-translate-y-1 hover:text-white"
       >
-        Agendar Presentación DAF / SECPLA
+        Agendar Diagnóstico
       </a>
       <a
         href="#como-funciona"
@@ -42,18 +40,23 @@
       </a>
     </div>
 
-    <div class="reveal mx-auto mt-16 grid max-w-2xl grid-cols-3 gap-6 border-t border-white/10 pt-10">
-      <div>
-        <p class="text-3xl font-extrabold text-white">$0</p>
-        <p class="mt-1 text-xs font-semibold text-white/50">costo para el vecino</p>
-      </div>
-      <div>
-        <p class="text-3xl font-extrabold text-teal">3 pasos</p>
-        <p class="mt-1 text-xs font-semibold text-white/50">de la consulta a la patente</p>
-      </div>
-      <div>
-        <p class="text-3xl font-extrabold text-white">24/7</p>
-        <p class="mt-1 text-xs font-semibold text-white/50">soporte y atención</p>
+    <div class="reveal relative left-1/2 mt-16 w-[90vw] -translate-x-1/2 border-t border-white/10 pt-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-4 gap-6">
+        <div>
+          <p class="text-2xl font-extrabold text-white">Si nos contratas:</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold text-white">$0</p>
+          <p class="mt-1 text-xs font-semibold text-white/50">costo para el vecino</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold text-teal">3 pasos</p>
+          <p class="mt-1 text-xs font-semibold text-white/50">de la consulta a la patente</p>
+        </div>
+        <div>
+          <p class="text-3xl font-extrabold text-white">24/7</p>
+          <p class="mt-1 text-xs font-semibold text-white/50">soporte y atención</p>
+        </div>
       </div>
     </div>
   </div>

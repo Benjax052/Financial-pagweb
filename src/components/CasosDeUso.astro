@@ -1,4 +1,6 @@
 ---
+import SectionGlow from "./SectionGlow.astro";
+
 const casos = [
   {
     color: "emerald",
@@ -27,10 +29,17 @@ const colorClasses: Record<string, string> = {
   teal: "bg-teal/10 text-teal",
   white: "bg-white/10 text-white",
 };
+
+const hoverBorderClasses: Record<string, string> = {
+  emerald: "hover:border-emerald/30",
+  teal: "hover:border-teal/30",
+  white: "hover:border-white/30",
+};
 ---
 
-<section id="casos-de-uso" class="border-t border-white/10 bg-white/[0.02] py-24">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+<section id="casos-de-uso" class="relative overflow-hidden bg-white/[0.02] py-24">
+  <SectionGlow flip />
+  <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
     <div class="reveal mx-auto max-w-2xl text-center">
       <span class="text-xs font-bold uppercase tracking-widest text-emerald"
         >Emprendimientos Reales, Resultados Reales</span
@@ -43,7 +52,7 @@ const colorClasses: Record<string, string> = {
     <div class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {
         casos.map((caso) => (
-          <div class="reveal rounded-2xl border border-white/10 bg-black/40 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-white/25">
+          <div class={`reveal rounded-2xl border border-white/10 bg-black/40 p-6 text-center transition-all duration-300 hover:-translate-y-1 ${hoverBorderClasses[caso.color]}`}>
             <div class={`mx-auto grid h-11 w-11 place-items-center rounded-xl ${colorClasses[caso.color]}`}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                 <path d={caso.icon} stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
