@@ -12,19 +12,19 @@ const navLinks = [
 ];
 ---
 
-<header class="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-md">
+<header class="sticky top-0 z-50 border-b border-petrol/20 bg-white/80 backdrop-blur-md">
   <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
     <a href="#top" class="flex items-center gap-2.5">
       <img src={isotipo.src} alt="" class="h-9 w-9" />
       <span class="leading-tight">
-        <span class="block font-extrabold text-white">Financial</span>
-        <span class="block text-[10px] font-semibold uppercase tracking-wider text-white/60"
+        <span class="block font-extrabold text-petrol">Financial</span>
+        <span class="block text-[10px] font-semibold uppercase tracking-wider text-petrol"
           >Formalización Municipal</span
         >
       </span>
     </a>
 
-    <nav class="hidden items-center gap-8 text-sm font-semibold text-white/70 lg:flex">
+    <nav class="hidden items-center gap-8 text-base font-semibold text-petrol xl:gap-6 lg:flex">
       {
         navLinks.map((link) => (
           <a href={link.href} class="transition-colors hover:text-emerald">
@@ -38,7 +38,7 @@ const navLinks = [
       href={DIAGNOSTICO_WHATSAPP_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      class="hidden rounded-full bg-emerald px-5 py-2.5 text-sm font-bold text-petrol shadow-[0_0_20px_rgba(80,200,135,0.3)] transition-all duration-300 hover:-translate-y-1 hover:text-white lg:block"
+      class="hidden rounded-full bg-emerald px-5 py-2.5 text-base font-bold text-petrol shadow-[0_0_20px_rgba(80,200,135,0.3)] transition-all duration-300 hover:-translate-y-1 hover:text-white lg:block"
     >
       Agendar Diagnóstico
     </a>
@@ -48,23 +48,23 @@ const navLinks = [
       aria-label="Abrir menú"
       aria-expanded="false"
       aria-controls="mobileMenu"
-      class="grid h-10 w-10 place-items-center rounded-lg border border-white/15 lg:hidden"
+      class="grid h-10 w-10 place-items-center rounded-lg border border-petrol/25 lg:hidden"
     >
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"
         ><path
           d="M4 6h16M4 12h16M4 18h16"
-          stroke="#fff"
+          stroke="#024655"
           stroke-width="2"
           stroke-linecap="round"></path></svg
       >
     </button>
   </div>
 
-  <div id="mobileMenu" class="mobile-menu border-t border-white/10 lg:hidden">
-    <nav class="flex flex-col gap-1 px-6 py-4 text-sm font-semibold text-white/70">
+  <div id="mobileMenu" class="mobile-menu border-t border-petrol/20 lg:hidden">
+    <nav class="flex flex-col gap-1 px-6 py-4 text-base font-semibold text-petrol">
       {
         navLinks.map((link) => (
-          <a href={link.href} class="rounded-lg px-3 py-2.5 hover:bg-white/5 hover:text-white">
+          <a href={link.href} class="rounded-lg px-3 py-2.5 hover:bg-petrol/8 hover:text-petrol">
             {link.label}
           </a>
         ))

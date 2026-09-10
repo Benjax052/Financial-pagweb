@@ -3,25 +3,25 @@ import SectionGlow from "./SectionGlow.astro";
 import isotipo from "../assets/Financial isotipo.svg";
 ---
 
-<section id="como-funciona" class="relative overflow-hidden bg-white/[0.02] py-24">
+<section id="como-funciona" class="relative overflow-hidden bg-petrol/[0.05] py-24">
   <SectionGlow />
   <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start">
       <!-- Left: kicker + timeline -->
       <div class="reveal">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald">Proceso Ágil & 100% Digital</span>
-        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+        <span class="text-sm font-bold uppercase tracking-widest text-petrol">Proceso Ágil & 100% Digital</span>
+        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-petrol sm:text-4xl">
           De la conversación informal al pago de la patente, en 3 pasos
         </h2>
 
-        <div class="mt-12 space-y-12 border-l-2 border-white/10 pl-8">
+        <div class="mt-12 space-y-12 border-l-2 border-petrol/25 pl-8">
           <div class="relative">
             <span
-              class="absolute -left-12 top-0 grid h-8 w-8 place-items-center rounded-full border-2 border-emerald bg-black text-xs font-bold text-emerald"
+              class="absolute -left-12 top-0 grid h-8 w-8 place-items-center rounded-full border-2 border-emerald bg-white text-sm font-bold text-petrol"
               >01</span
             >
-            <h3 class="font-bold text-white">Contacto sin fricción</h3>
-            <p class="mt-2 text-sm leading-relaxed text-white/60">
+            <h3 class="font-bold text-petrol">Contacto sin fricción</h3>
+            <p class="mt-2 text-base leading-relaxed text-petrol">
               El emprendedor escanea un QR en la web municipal, redes sociales o afiches vecinales y abre WhatsApp
               al instante, sin descargar apps.
             </p>
@@ -29,11 +29,11 @@ import isotipo from "../assets/Financial isotipo.svg";
 
           <div class="relative">
             <span
-              class="absolute -left-12 top-0 grid h-8 w-8 place-items-center rounded-full border-2 border-teal bg-black text-xs font-bold text-teal"
+              class="absolute -left-12 top-0 grid h-8 w-8 place-items-center rounded-full border-2 border-teal bg-white text-sm font-bold text-petrol"
               >02</span
             >
-            <h3 class="font-bold text-white">Diagnóstico y perfilamiento IA</h3>
-            <p class="mt-2 text-sm leading-relaxed text-white/60">
+            <h3 class="font-bold text-petrol">Diagnóstico y perfilamiento IA</h3>
+            <p class="mt-2 text-base leading-relaxed text-petrol">
               La IA analiza el rubro, verifica zonificación preliminar (<abbr title="Dirección de Obras Municipales" class="underline decoration-dotted underline-offset-2">DOM</abbr>),
               determina si califica como <abbr title="Microempresa Familiar" class="underline decoration-dotted underline-offset-2">MEF</abbr>{' '}
               y genera el checklist exacto.
@@ -42,11 +42,11 @@ import isotipo from "../assets/Financial isotipo.svg";
 
           <div class="relative">
             <span
-              class="absolute -left-12 top-0 grid h-8 w-8 place-items-center rounded-full border-2 border-emerald bg-emerald text-xs font-bold text-petrol"
+              class="absolute -left-12 top-0 grid h-8 w-8 place-items-center rounded-full border-2 border-emerald bg-emerald text-sm font-bold text-petrol"
               >03</span
             >
-            <h3 class="font-bold text-white">Trámite asistido en el SII</h3>
-            <p class="mt-2 text-sm leading-relaxed text-white/60">
+            <h3 class="font-bold text-petrol">Trámite asistido en el SII</h3>
+            <p class="mt-2 text-base leading-relaxed text-petrol">
               Acompañamiento guiado para la iniciación de actividades en el <abbr title="Servicio de Impuestos Internos" class="underline decoration-dotted underline-offset-2">SII</abbr>{' '}
               y obtención del <abbr title="RUT electrónico, para emitir boletas y facturas" class="underline decoration-dotted underline-offset-2">e-RUT</abbr>,
               listo para el pago de la patente municipal.
@@ -61,11 +61,11 @@ import isotipo from "../assets/Financial isotipo.svg";
           <div class="overflow-hidden rounded-[2rem] bg-petrol">
             <!-- Chat header -->
             <div class="flex items-center gap-3 rounded-t-[2rem] bg-petrol px-4 py-3.5 text-white">
-              <div class="grid h-9 w-9 place-items-center rounded-full bg-black p-1.5">
+              <div class="grid h-9 w-9 place-items-center rounded-full bg-white p-1.5">
                 <img src={isotipo.src} alt="" width="24" height="24" class="h-full w-full" />
               </div>
               <div class="flex-1">
-                <p class="text-sm font-bold leading-tight">Financial</p>
+                <p class="text-base font-bold leading-tight">Financial</p>
                 <p class="text-[11px] text-emerald">en línea</p>
               </div>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="opacity-70" aria-hidden="true"
@@ -79,10 +79,10 @@ import isotipo from "../assets/Financial isotipo.svg";
             </div>
 
             <!-- Chat body -->
-            <div class="flex h-[420px] flex-col gap-3 overflow-y-auto bg-black px-3 py-4">
-              <div class="chat-bubble-in max-w-[80%] bg-white/10 px-3.5 py-2.5 text-[13px] leading-snug text-white/90">
+            <div class="flex h-[420px] flex-col gap-3 overflow-y-auto bg-white px-3 py-4">
+              <div class="chat-bubble-in max-w-[80%] bg-petrol/[0.08] px-3.5 py-2.5 text-[13px] leading-snug text-petrol">
                 Hola! Quiero vender empanadas los fines de semana desde mi casa, ¿necesito algo legal? 😅
-                <div class="mt-1 text-right text-[10px] text-white/60">09:14</div>
+                <div class="mt-1 text-right text-[10px] text-petrol">09:14</div>
               </div>
 
               <div
@@ -90,7 +90,7 @@ import isotipo from "../assets/Financial isotipo.svg";
               >
                 ¡Hola María! 👋 Soy el asistente virtual de tu Municipalidad. Cuéntame: ¿vendes solo los fines de
                 semana o de forma habitual?
-                <div class="mt-1 flex items-center justify-end gap-1 text-[10px] text-petrol/60">
+                <div class="mt-1 flex items-center justify-end gap-1 text-[10px] text-petrol">
                   09:14
                   <svg width="14" height="10" viewBox="0 0 16 11" fill="none" aria-hidden="true"
                     ><path
@@ -103,9 +103,9 @@ import isotipo from "../assets/Financial isotipo.svg";
                 </div>
               </div>
 
-              <div class="chat-bubble-in max-w-[80%] bg-white/10 px-3.5 py-2.5 text-[13px] leading-snug text-white/90">
+              <div class="chat-bubble-in max-w-[80%] bg-petrol/[0.08] px-3.5 py-2.5 text-[13px] leading-snug text-petrol">
                 Los fines de semana, en la feria costumbrista del barrio
-                <div class="mt-1 text-right text-[10px] text-white/60">09:15</div>
+                <div class="mt-1 text-right text-[10px] text-petrol">09:15</div>
               </div>
 
               <div
@@ -113,7 +113,7 @@ import isotipo from "../assets/Financial isotipo.svg";
               >
                 Perfecto, calificas como Microempresa Familiar (MEF) ✅. Te preparo el checklist para iniciar
                 actividades en el SII. ¿Comenzamos?
-                <div class="mt-1 flex items-center justify-end gap-1 text-[10px] text-petrol/60">
+                <div class="mt-1 flex items-center justify-end gap-1 text-[10px] text-petrol">
                   09:15
                   <svg width="14" height="10" viewBox="0 0 16 11" fill="none" aria-hidden="true"
                     ><path
@@ -126,10 +126,10 @@ import isotipo from "../assets/Financial isotipo.svg";
                 </div>
               </div>
 
-              <div class="chat-bubble-in flex items-center gap-1 bg-white/10 px-4 py-3">
-                <span class="typing-dot h-1.5 w-1.5 rounded-full bg-white/40"></span>
-                <span class="typing-dot h-1.5 w-1.5 rounded-full bg-white/40"></span>
-                <span class="typing-dot h-1.5 w-1.5 rounded-full bg-white/40"></span>
+              <div class="chat-bubble-in flex items-center gap-1 bg-petrol/[0.08] px-4 py-3">
+                <span class="typing-dot h-1.5 w-1.5 rounded-full bg-petrol/40"></span>
+                <span class="typing-dot h-1.5 w-1.5 rounded-full bg-petrol/40"></span>
+                <span class="typing-dot h-1.5 w-1.5 rounded-full bg-petrol/40"></span>
               </div>
             </div>
           </div>
