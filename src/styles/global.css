@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: color-mix(in srgb, var(--color-petrol) 5%, white);
   font-family: var(--font-sans);
 }
 

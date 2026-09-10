@@ -25,9 +25,9 @@ const casos = [
 ];
 
 const colorClasses: Record<string, string> = {
-  emerald: "bg-emerald/10 text-emerald",
-  teal: "bg-teal/10 text-teal",
-  white: "bg-petrol/20 text-petrol",
+  emerald: "bg-emerald/30 text-petrol",
+  teal: "bg-teal/30 text-petrol",
+  white: "bg-petrol/30 text-petrol",
 };
 
 const hoverBorderClasses: Record<string, string> = {
@@ -52,7 +52,7 @@ const hoverBorderClasses: Record<string, string> = {
     <div class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {
         casos.map((caso) => (
-          <div class={`reveal rounded-2xl border border-petrol/20 bg-petrol/8 p-6 text-center transition-all duration-300 hover:-translate-y-1 ${hoverBorderClasses[caso.color]}`}>
+          <div class={`reveal rounded-2xl border border-petrol/30 bg-petrol/16 p-6 text-center transition-all duration-300 hover:-translate-y-1 ${hoverBorderClasses[caso.color]}`}>
             <div class={`mx-auto grid h-11 w-11 place-items-center rounded-xl ${colorClasses[caso.color]}`}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d={caso.icon} stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />

@@ -12,13 +12,13 @@ import SectionGlow from "./SectionGlow.astro";
     </h2>
   </div>
 
-  <div class="reveal mx-auto mt-12 max-w-3xl rounded-3xl border border-petrol/20 bg-petrol/8 p-8 sm:p-10">
+  <div class="reveal mx-auto mt-12 max-w-3xl rounded-3xl border border-petrol/30 bg-petrol/16 p-8 sm:p-10">
     <label for="comunaSelect" class="text-sm font-bold uppercase tracking-wide text-petrol"
       >Seleccione el tipo de comuna</label
     >
     <select
       id="comunaSelect"
-      class="mt-3 w-full rounded-xl border border-petrol/30 bg-white px-4 py-3.5 text-base font-semibold text-petrol focus:border-emerald focus:outline-none focus:ring-2 focus:ring-emerald/30"
+      class="mt-3 w-full rounded-xl border border-petrol/30 bg-petrol/[0.05] px-4 py-3.5 text-base font-semibold text-petrol focus:border-emerald focus:outline-none focus:ring-2 focus:ring-emerald/30"
     >
       <option value="emergente">Comuna Emergente · menos de 40.000 hab.</option>
       <option value="intermedia" selected>Comuna Intermedia · 40.000 – 120.000 hab.</option>
@@ -26,21 +26,21 @@ import SectionGlow from "./SectionGlow.astro";
     </select>
 
     <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-      <div class="rounded-2xl border border-teal/25 bg-teal/5 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-teal/50">
-        <p id="outHoras" class="text-3xl font-extrabold text-teal">1.800</p>
-        <p class="mt-1 text-sm font-semibold text-petrol">horas/año de atención presencial ahorradas</p>
+      <div class="rounded-2xl border border-teal/55 bg-teal/32 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-teal/60">
+        <p id="outHoras" class="text-3xl font-extrabold text-petrol">1.800</p>
+        <p class="mt-1 text-sm font-semibold text-petrol/90">horas/año de atención presencial ahorradas</p>
       </div>
-      <div class="rounded-2xl border border-emerald/25 bg-emerald/5 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-emerald/50">
+      <div class="rounded-2xl border border-emerald/55 bg-emerald/32 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-emerald/60">
         <p id="outPatentes" class="text-3xl font-extrabold text-petrol">350</p>
-        <p class="mt-1 text-sm font-semibold text-petrol">nuevas patentes formalizadas estimadas/año</p>
+        <p class="mt-1 text-sm font-semibold text-petrol/90">nuevas patentes formalizadas estimadas/año</p>
       </div>
-      <div class="rounded-2xl border border-petrol/25 bg-petrol/8 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-petrol/40">
+      <div class="rounded-2xl border border-petrol/35 bg-petrol/16 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-petrol/40">
         <p id="outIngreso" class="text-3xl font-extrabold text-petrol">$52M</p>
-        <p class="mt-1 text-sm font-semibold text-petrol">ingreso adicional estimado por recaudación/año</p>
+        <p class="mt-1 text-sm font-semibold text-petrol/90">ingreso adicional estimado por recaudación/año</p>
       </div>
     </div>
 
-    <p class="mt-6 text-center text-[11px] text-petrol">
+    <p class="mt-6 text-center text-[11px] text-petrol/90">
       *Estimación referencial para efectos demostrativos, calculada a partir de datos de horas de atención
       presencial reportados por una comuna intermedia. Las cifras finales se ajustan tras el diagnóstico comunal.*
     </p>
