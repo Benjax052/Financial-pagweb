@@ -18,7 +18,7 @@ const items = [
     color: "white",
     icon: "M6 10V8a6 6 0 1 1 12 0v2 M5 10h14v10H5V10Z M12 14v3",
     title: "Acceso por roles",
-    desc: "Permisos diferenciados para DAF, SECPLA y Dirección de Rentas.",
+    desc: "Permisos diferenciados para la Dirección de Administración y Finanzas (DAF), la Secretaría Comunal de Planificación (SECPLA) y la Dirección de Rentas.",
   },
 ];
 
@@ -49,7 +49,7 @@ const colorClasses: Record<string, string> = {
         items.map((item, i) => (
           <div class={`flex gap-4 py-6 ${i === 0 ? "" : "border-t border-white/10"}`}>
             <div class={`grid h-11 w-11 shrink-0 place-items-center rounded-xl ${colorClasses[item.color]}`}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d={item.icon} stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>

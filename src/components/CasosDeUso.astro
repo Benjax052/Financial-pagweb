@@ -54,7 +54,7 @@ const hoverBorderClasses: Record<string, string> = {
         casos.map((caso) => (
           <div class={`reveal rounded-2xl border border-white/10 bg-black/40 p-6 text-center transition-all duration-300 hover:-translate-y-1 ${hoverBorderClasses[caso.color]}`}>
             <div class={`mx-auto grid h-11 w-11 place-items-center rounded-xl ${colorClasses[caso.color]}`}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d={caso.icon} stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>

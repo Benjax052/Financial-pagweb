@@ -34,8 +34,9 @@ import isotipo from "../assets/Financial isotipo.svg";
             >
             <h3 class="font-bold text-white">Diagnóstico y perfilamiento IA</h3>
             <p class="mt-2 text-sm leading-relaxed text-white/60">
-              La IA analiza el rubro, verifica zonificación preliminar (DOM), determina si califica como MEF y
-              genera el checklist exacto.
+              La IA analiza el rubro, verifica zonificación preliminar (<abbr title="Dirección de Obras Municipales" class="underline decoration-dotted underline-offset-2">DOM</abbr>),
+              determina si califica como <abbr title="Microempresa Familiar" class="underline decoration-dotted underline-offset-2">MEF</abbr>{' '}
+              y genera el checklist exacto.
             </p>
           </div>
 
@@ -44,9 +45,10 @@ import isotipo from "../assets/Financial isotipo.svg";
               class="absolute -left-12 top-0 grid h-8 w-8 place-items-center rounded-full border-2 border-emerald bg-emerald text-xs font-bold text-petrol"
               >03</span
             >
-            <h3 class="font-bold text-white">Trámite asistido en SII</h3>
+            <h3 class="font-bold text-white">Trámite asistido en el SII</h3>
             <p class="mt-2 text-sm leading-relaxed text-white/60">
-              Acompañamiento guiado para la iniciación de actividades en primera categoría y obtención de e-RUT,
+              Acompañamiento guiado para la iniciación de actividades en el <abbr title="Servicio de Impuestos Internos" class="underline decoration-dotted underline-offset-2">SII</abbr>{' '}
+              y obtención del <abbr title="RUT electrónico, para emitir boletas y facturas" class="underline decoration-dotted underline-offset-2">e-RUT</abbr>,
               listo para el pago de la patente municipal.
             </p>
           </div>
@@ -60,13 +62,13 @@ import isotipo from "../assets/Financial isotipo.svg";
             <!-- Chat header -->
             <div class="flex items-center gap-3 rounded-t-[2rem] bg-petrol px-4 py-3.5 text-white">
               <div class="grid h-9 w-9 place-items-center rounded-full bg-black p-1.5">
-                <img src={isotipo.src} alt="" class="h-full w-full" />
+                <img src={isotipo.src} alt="" width="24" height="24" class="h-full w-full" />
               </div>
               <div class="flex-1">
                 <p class="text-sm font-bold leading-tight">Financial</p>
                 <p class="text-[11px] text-emerald">en línea</p>
               </div>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="opacity-70"
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="opacity-70" aria-hidden="true"
                 ><circle cx="5" cy="12" r="1.6" fill="currentColor"></circle><circle
                   cx="12"
                   cy="12"
@@ -80,7 +82,7 @@ import isotipo from "../assets/Financial isotipo.svg";
             <div class="flex h-[420px] flex-col gap-3 overflow-y-auto bg-black px-3 py-4">
               <div class="chat-bubble-in max-w-[80%] bg-white/10 px-3.5 py-2.5 text-[13px] leading-snug text-white/90">
                 Hola! Quiero vender empanadas los fines de semana desde mi casa, ¿necesito algo legal? 😅
-                <div class="mt-1 text-right text-[10px] text-white/30">09:14</div>
+                <div class="mt-1 text-right text-[10px] text-white/60">09:14</div>
               </div>
 
               <div
@@ -90,7 +92,7 @@ import isotipo from "../assets/Financial isotipo.svg";
                 semana o de forma habitual?
                 <div class="mt-1 flex items-center justify-end gap-1 text-[10px] text-petrol/60">
                   09:14
-                  <svg width="14" height="10" viewBox="0 0 16 11" fill="none"
+                  <svg width="14" height="10" viewBox="0 0 16 11" fill="none" aria-hidden="true"
                     ><path
                       d="M1 5.5 4.5 9 11 1.5M5.5 9 12 1.5"
                       stroke="#024655"
@@ -103,7 +105,7 @@ import isotipo from "../assets/Financial isotipo.svg";
 
               <div class="chat-bubble-in max-w-[80%] bg-white/10 px-3.5 py-2.5 text-[13px] leading-snug text-white/90">
                 Los fines de semana, en la feria costumbrista del barrio
-                <div class="mt-1 text-right text-[10px] text-white/30">09:15</div>
+                <div class="mt-1 text-right text-[10px] text-white/60">09:15</div>
               </div>
 
               <div
@@ -113,7 +115,7 @@ import isotipo from "../assets/Financial isotipo.svg";
                 actividades en el SII. ¿Comenzamos?
                 <div class="mt-1 flex items-center justify-end gap-1 text-[10px] text-petrol/60">
                   09:15
-                  <svg width="14" height="10" viewBox="0 0 16 11" fill="none"
+                  <svg width="14" height="10" viewBox="0 0 16 11" fill="none" aria-hidden="true"
                     ><path
                       d="M1 5.5 4.5 9 11 1.5M5.5 9 12 1.5"
                       stroke="#024655"

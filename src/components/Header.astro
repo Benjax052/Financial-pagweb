@@ -1,5 +1,6 @@
 ---
 import isotipo from "../assets/Financial isotipo.svg";
+import { DIAGNOSTICO_WHATSAPP_LINK } from "../lib/contact";
 
 const navLinks = [
   { href: "#como-funciona", label: "¿Cómo funciona?" },
@@ -7,6 +8,7 @@ const navLinks = [
   { href: "#impacto-roi", label: "Impacto & ROI" },
   { href: "#casos-de-uso", label: "Casos de Uso" },
   { href: "#seguridad", label: "Seguridad" },
+  { href: "#equipo", label: "Equipo" },
 ];
 ---
 
@@ -16,7 +18,7 @@ const navLinks = [
       <img src={isotipo.src} alt="" class="h-9 w-9" />
       <span class="leading-tight">
         <span class="block font-extrabold text-white">Financial</span>
-        <span class="block text-[10px] font-semibold uppercase tracking-wider text-white/40"
+        <span class="block text-[10px] font-semibold uppercase tracking-wider text-white/60"
           >Formalización Municipal</span
         >
       </span>
@@ -33,7 +35,9 @@ const navLinks = [
     </nav>
 
     <a
-      href="#cta-final"
+      href={DIAGNOSTICO_WHATSAPP_LINK}
+      target="_blank"
+      rel="noopener noreferrer"
       class="hidden rounded-full bg-emerald px-5 py-2.5 text-sm font-bold text-petrol shadow-[0_0_20px_rgba(80,200,135,0.3)] transition-all duration-300 hover:-translate-y-1 hover:text-white lg:block"
     >
       Agendar Diagnóstico
@@ -42,9 +46,11 @@ const navLinks = [
     <button
       id="menuBtn"
       aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
       class="grid h-10 w-10 place-items-center rounded-lg border border-white/15 lg:hidden"
     >
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"
         ><path
           d="M4 6h16M4 12h16M4 18h16"
           stroke="#fff"
@@ -64,7 +70,9 @@ const navLinks = [
         ))
       }
       <a
-        href="#cta-final"
+        href={DIAGNOSTICO_WHATSAPP_LINK}
+        target="_blank"
+        rel="noopener noreferrer"
         class="mt-2 rounded-full bg-emerald px-4 py-3 text-center font-bold text-petrol transition-all duration-300 hover:-translate-y-1 hover:text-white"
         >Agendar Diagnóstico</a
       >
@@ -76,9 +84,15 @@ const navLinks = [
   const menuBtn = document.getElementById("menuBtn");
   const mobileMenu = document.getElementById("mobileMenu");
   menuBtn?.addEventListener("click", () => {
-    mobileMenu?.classList.toggle("open");
+    const isOpen = mobileMenu?.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", String(Boolean(isOpen)));
+    menuBtn.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
   });
   mobileMenu?.querySelectorAll("a").forEach((a) =>
-    a.addEventListener("click", () => mobileMenu?.classList.remove("open"))
+    a.addEventListener("click", () => {
+      mobileMenu?.classList.remove("open");
+      menuBtn?.setAttribute("aria-expanded", "false");
+      menuBtn?.setAttribute("aria-label", "Abrir menú");
+    })
   );
 </script>

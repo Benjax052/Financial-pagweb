@@ -1,5 +1,6 @@
 ---
 import SectionGlow from "./SectionGlow.astro";
+import { CONTACT_EMAIL, DIAGNOSTICO_WHATSAPP_LINK } from "../lib/contact";
 ---
 
 <section id="cta-final" class="relative overflow-hidden bg-black">
@@ -14,10 +15,18 @@ import SectionGlow from "./SectionGlow.astro";
     </p>
     <div class="reveal mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
       <a
-        href="mailto:grupofinancial06@gmail.com"
+        href={DIAGNOSTICO_WHATSAPP_LINK}
+        target="_blank"
+        rel="noopener noreferrer"
         class="rounded-full bg-emerald px-8 py-4 text-sm font-bold text-petrol shadow-[0_0_36px_rgba(80,200,135,0.3)] transition-all duration-300 hover:-translate-y-1 hover:text-white"
       >
-        Solicitar Diagnóstico Comunal
+        Escribir por WhatsApp
+      </a>
+      <a
+        href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Solicitud de diagnóstico comunal")}`}
+        class="rounded-full border border-white/20 px-8 py-4 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:border-emerald hover:text-emerald"
+      >
+        Escribir por correo
       </a>
     </div>
   </div>

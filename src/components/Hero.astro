@@ -1,11 +1,12 @@
 ---
 import SectionGlow from "./SectionGlow.astro";
+import { DIAGNOSTICO_WHATSAPP_LINK } from "../lib/contact";
 ---
 
 <section class="relative overflow-hidden bg-black">
   <SectionGlow />
 
-  <div class="relative mx-auto max-w-6xl px-1 py-24 text-center lg:px-1 lg:py-13">
+  <div class="relative mx-auto max-w-6xl px-1 py-14 text-center lg:px-1 lg:py-16">
     <span
       class="reveal inline-flex items-center gap-2 rounded-full border border-emerald/30 bg-emerald/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-emerald"
     >
@@ -13,21 +14,26 @@ import SectionGlow from "./SectionGlow.astro";
     </span>
 
     <h1
-      class="reveal mt-8 text-4xl font-extrabold leading-[1.15] tracking-normal text-white sm:text-6xl lg:text-7xl"
+      class="reveal mt-7 text-4xl font-extrabold leading-[1.15] tracking-normal text-white sm:text-6xl lg:text-7xl"
     >
       Convierta vecinos informales en contribuyentes <em class="text-emerald italic">activos</em>,<br />
       sin fricción
     </h1>
 
-    <p class="reveal mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-white/60">
-      Financial es el asistente de WhatsApp que guía a cada emprendedor de su comuna paso a paso,
-      desde la primera pregunta hasta el pago de la patente, mientras su equipo de Rentas y
-      Fomento Productivo recupera cientos de horas hoy perdidas en ventanilla
+    <p class="reveal mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/60">
+      Financial es el asistente de WhatsApp que guía a cada emprendedor de su comuna paso a paso
     </p>
 
-    <div class="reveal mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+    <p class="reveal mx-auto mt-3 max-w-2xl text-sm font-semibold text-white/60">
+      A diferencia de una mesa de ayuda presencial o un chatbot genérico, Financial no deriva al vecino a un
+      formulario: lo acompaña por WhatsApp hasta que su patente queda pagada
+    </p>
+
+    <div class="reveal mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
       <a
-        href="#cta-final"
+        href={DIAGNOSTICO_WHATSAPP_LINK}
+        target="_blank"
+        rel="noopener noreferrer"
         class="rounded-full bg-emerald px-7 py-4 text-center text-sm font-bold text-petrol shadow-[0_0_36px_rgba(80,200,135,0.3)] transition-all duration-300 hover:-translate-y-1 hover:text-white"
       >
         Agendar Diagnóstico
@@ -40,7 +46,7 @@ import SectionGlow from "./SectionGlow.astro";
       </a>
     </div>
 
-    <div class="reveal relative left-1/2 mt-16 w-[90vw] -translate-x-1/2 border-t border-white/10 pt-8">
+    <div class="reveal relative left-1/2 mt-14 w-[90vw] -translate-x-1/2 border-t border-white/10 pt-7">
       <p class="text-xl font-extrabold text-white sm:text-2xl">Si nos contratas:</p>
       <div class="mx-auto mt-6 grid grid-cols-3 gap-4 sm:gap-6">
         <div>
